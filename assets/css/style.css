@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+/* Color Scheme */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*Font Family*/
+/*Font Weights*/
+/*Font Sizes*/
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+h3 {
+  writing-mode: vertical-lr;
+  /*position: absolute;
+  transform: rotate(90deg);
+  font-size: 5pt;*/
+}
+
+.navbar {
+  background-color: #FFFFFF;
+  height: 3.5rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  padding-bottom: 0rem;
+  padding-right: 36px;
+}
+.navbar div {
+  background-color: #FFFFFF;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Old Standard TT", serif;
+  font-size: 16px;
+  font-weight: 700;
+  height: 3.5rem;
+  width: 3.5rem;
+  color: #FFFFFF;
+  background-color: #0C0910;
+}
+
+#navbar-logo {
+  text-align: center;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+#navbar-logo:hover {
+  color: #ECECEC;
+}
+
+#navbar-collapse {
+  background-color: #FFFFFF;
+}
+
+.smoky-black-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb%2812, 9, 16%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.link-smoky-black {
+  color: #0C0910;
+  font-weight: 700;
+}
+
+.link-smoky-black:hover, .link-smoky-black:focus {
+  color: #646266;
+}
+
+.click-to-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.newsletter {
+  display: flex;
+}
+.newsletter__box {
+  width: 90%;
+}
+.newsletter__sub {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */
