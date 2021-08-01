@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 /* Color Scheme */
@@ -17,11 +18,71 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+h1 {
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ECECEC;
+}
+
 h3 {
   writing-mode: vertical-lr;
+  color: #0C0910;
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+  font-size: 16px;
   /*position: absolute;
   transform: rotate(90deg);
   font-size: 5pt;*/
+}
+
+p {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.button {
+  text-decoration: none;
+  color: #0C0910;
+  background-color: #FFFFFF;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  border-radius: 0;
+  border: 1px solid #0C0910;
+}
+.button__md {
+  font-size: 16px;
+  padding: 0.688rem 2rem;
+}
+.button__sm {
+  font-size: 14px;
+  padding: 0.28rem 1.05rem;
+}
+
+.button:hover {
+  border-color: #A6A5A8;
+}
+
+.button-check:focus + .button, .button:focus {
+  color: #D1D1D1;
+  border-color: #A6A5A8;
+  box-shadow: 0 0 0 0.25rem #ECECEC;
+}
+
+.button-check:checked + .button, .button-check:active + .button, .button:active, .button.active, .show > .button.dropdown-toggle {
+  color: #FFFFFF;
+  background-color: #A6A5A8;
+  border-color: #A6A5A8;
+}
+
+.button-check:checked + .button:focus, .button-check:active + .button:focus, .button:active:focus, .button.active:focus, .show > .button.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem #ECECEC;
 }
 
 .navbar {
@@ -30,7 +91,6 @@ h3 {
   padding-top: 0rem;
   padding-bottom: 0rem;
   padding-bottom: 0rem;
-  padding-right: 36px;
 }
 .navbar div {
   background-color: #FFFFFF;
@@ -62,6 +122,10 @@ h3 {
   background-color: #FFFFFF;
 }
 
+.navbar-toggler {
+  padding-right: 1.6rem;
+}
+
 .smoky-black-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb%2812, 9, 16%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
@@ -75,22 +139,142 @@ h3 {
   color: #646266;
 }
 
+.main {
+  display: flex;
+  flex-flow: row wrap-reverse;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
 .click-to-action {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: start;
 }
 
+.main-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 33vh;
+  background-image: url("../img/imagen1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*z-index: -4;*/
+}
+
+/*.imagen {
+    object-fit: cover;
+    object-position: top;
+}*/
+.shop-link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  height: 39.4vh;
+  padding: 2rem 2.25rem 2rem 2.25rem;
+}
+.shop-link h1 {
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.shop-link p {
+  color: #646266;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  /*height: 4.675rem;*/
+  overflow: hidden;
+  column-width: 100%;
+  max-height: 4.65rem;
+}
+
 .newsletter {
   display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 19vh;
+  color: #FFFFFF;
 }
 .newsletter__box {
   width: 90%;
+  background-color: #0C0910;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  padding: 1.125rem 2.25rem 1.313rem 2.25rem;
 }
 .newsletter__sub {
   width: 10%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
 }
+
+.input {
+  width: 100%;
+  height: 30%;
+  font-family: "Old Standard TT", serif;
+  /*align-items: inherit ;*/
+}
+
+.correo {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+}
+
+@media (min-width: 800px) {
+  .main-img {
+    width: 55%;
+    height: 100vh;
+  }
+
+  .click-to-action {
+    width: 45%;
+  }
+
+  .shop-link {
+    height: 66vh;
+  }
+
+  .newsletter {
+    height: 34vh;
+  }
+}
+/* @media screen and (orientation:portrait) { … }
+ @media screen and (orientation:landscape) { … }
+
+ screen.width and screen.height. 
+
+
+ /* Exact aspect ratio 
+@media (aspect-ratio: 2/1) {
+    ...
+}
+
+/* Minimum aspect ratio */
+/*
+@media (min-aspect-ratio: 16/9) {
+    ...
+}
+
+/* Maximum aspect ratio 
+@media (max-aspect-ratio: 8/5) {
+    ...
+}
+
+
+ */
 
 /*# sourceMappingURL=style.css.map */

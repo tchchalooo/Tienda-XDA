@@ -1,0 +1,39 @@
+@media (min-width: 800px) {
+    .main-img {
+        width: 55%;
+        height: 100vh;
+    }
+    .click-to-action {
+        width: 45%;
+    }
+    .shop-link {
+        height: 66vh;
+    }
+    .newsletter {
+        height: 34vh;
+    }
+}
+
+/* @media screen and (orientation:portrait) { … }
+ @media screen and (orientation:landscape) { … }
+ 
+ screen.width and screen.height. 
+
+
+ /* Exact aspect ratio 
+@media (aspect-ratio: 2/1) {
+    ...
+}
+
+/* Minimum aspect ratio *//*
+@media (min-aspect-ratio: 16/9) {
+    ...
+}
+
+/* Maximum aspect ratio 
+@media (max-aspect-ratio: 8/5) {
+    ...
+}
+ 
+ 
+ */

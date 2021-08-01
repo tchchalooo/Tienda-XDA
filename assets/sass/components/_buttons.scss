@@ -1,0 +1,33 @@
+.button {
+    text-decoration: none;
+    color: $smoky-black;
+    background-color: $white;
+    font-family: $raleway;
+    font-weight: $bold;
+    border-radius: 0;
+    border: 1px solid $smoky-black;
+    &__md {
+        font-size: $medium;
+        padding: 0.688rem 2rem;
+    }
+    &__sm {
+        font-size: $small;
+        padding: 0.28rem 1.05rem;
+    }
+}
+.button:hover {
+    border-color: $quick-silver;
+}
+.button-check:focus + .button, .button:focus {
+    color: $light-gray;
+    border-color: $quick-silver;
+    box-shadow: 0 0 0 0.25rem $Isabelline;
+}
+.button-check:checked + .button, .button-check:active + .button, .button:active, .button.active, .show > .button.dropdown-toggle {
+    color: $white;
+    background-color: $quick-silver;
+    border-color: $quick-silver;
+}
+  .button-check:checked + .button:focus, .button-check:active + .button:focus, .button:active:focus, .button.active:focus, .show > .button.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem $Isabelline;
+}
