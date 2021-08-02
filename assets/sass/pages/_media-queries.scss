@@ -1,19 +1,30 @@
 @media (min-width: 800px) {
+    .navbar {
+        height: 5.75rem;
+    }
+    #logo {
+        font-size: $x-large;
+        height: 5.75rem;
+        width: 5.75rem;
+    }
+    .main {
+        padding-top: 5.75rem;
+    }
     .main-img {
         width: 55%;
-        height: 100vh;
+        height: 100%;
     }
     .click-to-action {
         width: 45%;
+        height: 100%;
     }
     .shop-link {
-        height: 66vh;
+        height: 66%;
     }
     .newsletter {
-        height: 34vh;
+        height: 34%;
     }
 }
-
 /* @media screen and (orientation:portrait) { … }
  @media screen and (orientation:landscape) { … }
  
