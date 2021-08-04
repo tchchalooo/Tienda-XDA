@@ -1,53 +1,86 @@
-.newsletter{
-    display:flex;
+.newsletter {
+    display: flex;
     justify-content: center;
     box-sizing: border-box;
     width: 100%;
     height: 19vh;
-    color:$white;
-    
+    color: $white;
 
 
-
-    &__box{
+    &__box {
         width: 90%;
-        background-color:$smoky-black ;
+        background-color: $smoky-black;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: start;
         padding: 1.125rem 2.25rem 1.313rem 2.25rem;
-     
-        
-    
-        
-
+        font-size: small;
+        h2 {
+            font-size: $xs-large;
+        }
 
     }
-&__sub{
-    width: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: $old-standard;  
-    font-weight: $regular;
 
-
-   
-
+    &__sub {
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $old-standard;
+        font-weight: $regular;
+        font-size: small;
+        h3 {
+            font-size: $medium;
+        }
+    }
 }
-}
-.input{
+
+.input {
     width: 100%;
-    height:30%;
+    height: 30%;
     font-family: $old-standard;
-   /*align-items: inherit ;*/
-     
-   
+    font-size: small;
+    /*align-items: inherit ;*/
 }
 
-.correo{
-    font-family: $old-standard;  
+.correo {
+    font-family: $old-standard;
     font-weight: $regular;
-    
+    font-size: small;
+
+}
+
+/*media query newsletter */
+
+@media (min-width: 768px) {
+    .newsletter {
+        &__box {
+            width: 94%;
+            padding: 1.5rem 8rem 4.2rem 5.25rem;
+            &__sub {
+                width: 6%;
+
+                h3 {
+                    font-size: $large;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .newsletter {
+        height: 30%;
+
+        &__box {
+            padding: 2.125rem 5rem 4.313rem 5rem;
+            h2 {
+                font-size: $x-large;
+            }
+        }
+    }
+    .correo {
+        font-size: $medium;
+    }
 }

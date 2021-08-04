@@ -4,11 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap 5.0.2 CSS via CDN -->
+    <!-- Bootstrap 5.0.2 CSS vía CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- Bootstrap 5.0.2 CSS via Download -->
-    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
@@ -19,7 +17,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-expand-md fixed-top">
             <!-- NAV-BAR -->
             <div class="container-fluid p-0">
                 <!-- LOGO -->
@@ -48,32 +46,38 @@
                         <li class="nav-item">
                             <a class="nav-link link-smoky-black" aria-current="page" href="#blog">Blog</a>
                         </li>
-                    </ul>
+                    </ul> <!-- FIN PESTAÑAS LINK -->
                 </div>
             </div>
         </nav> <!-- FIN NAV-BAR-->
     </header>
+    <!-- BODY -->
     <main class="main">
         <section class="click-to-action">
             <section class="shop-link">
                 <h1>LOREM IPSUM AD VALOREM</h1>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quasi architecto beatae vitae dicta sunt explicabo.</p>
-                <a class="button button__sm" href="">Ir a tienda</a>
-            </section>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    totam rem aperiam, eaque ipsa quasi architecto beatae vitae dicta sunt explicabo.</p>
+                <!-- BOTÓN -->
+                    <a id="button-shop" class="button button__sm button__md" href="#">Ir a tienda</a>
+                <!-- FIN BOTÓN -->
+            </section> <!-- FIN BODY -->
+            
+            <!-- NEWSLETTER -->
             <section class="newsletter">
                 <div class="newsletter__box">
                     <h2>Newsletter</h2>
                     <p class="correo">Correo electrónico </p>
-                    <input class="input"type="" placeholder="ingresa tu correo electrónico">
+                    <input class="input" type="" placeholder="ingresa tu correo electrónico">
                 </div>
                 <div class="newsletter__sub">
                     <h3>Suscribir</h3>
                 </div>
-            </section>
+            </section> <!-- FIN NEWSLETTER-->
         </section>
-        <section class="main-img" ><!--<img class="imagen" src="\assets\img\imagen1.png" alt="main-img"> --></section>
-    </main>
-    
+        <section class="main-img"></section>
+    </main> 
+
 
     <!-- jQuery via CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"

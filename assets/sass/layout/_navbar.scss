@@ -3,11 +3,12 @@
     height: 3.5rem;
     padding-top: 0rem;
     padding-bottom: 0rem;
-    padding-bottom: 0rem;
+
     div {
         background-color: $white;
     }
 }
+
 #logo {
     display: flex;
     justify-content: center;
@@ -24,23 +25,56 @@
     text-align: center;
     text-decoration: none;
     color: $white;
+
     &:hover {
         color: $Isabelline;
     }
 }
+
 #navbar-collapse {
     background-color: $white;
 }
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-left: 1.563rem;
+    padding-right: 1.563rem;
+}
+
 .navbar-toggler {
     padding-right: 1.6rem;
 }
+
 .smoky-black-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb%2812, 9, 16%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
+
 .link-smoky-black {
     color: $smoky-black;
     font-weight: $bold;
-  }
-.link-smoky-black:hover, .link-smoky-black:focus {
+}
+
+.link-smoky-black:hover,
+.link-smoky-black:focus {
     color: $granite-gray;
+}
+
+/*media query navbar*/
+@media (min-width: 768px) {
+    .navbar {
+        height: 5.75rem;
+        padding-right: 2.063rem;
+    }
+    #logo {
+        font-size: $x-large;
+        height: 5.75rem;
+        width: 5.75rem;
+        transform: rotate(270deg);
+    }
+}
+
+
+@media (min-width: 992px) {
+    
+
+    
 }

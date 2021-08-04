@@ -3,31 +3,23 @@ body {
 }
 h1{font-family: $old-standard;
     font-weight: $bold;
-    
-
 }
-
 h2{ 
     font-family: $old-standard;
     font-weight: $bold;
-    font-size: $x-large;
     color: $Isabelline;
 }
-
 h3{
     writing-mode: vertical-lr;
     color:$smoky-black;
     font-family: $old-standard;
     font-weight: $bold;
-    font-size: $medium;
-    /*position: absolute;
-    transform: rotate(90deg);
-    font-size: 5pt;*/
-}
 
+}
+  
 
 p{font-family: $old-standard;
     font-weight: $regular;
-    font-size: $small;
+    
     
 }
