@@ -5,8 +5,6 @@
     box-sizing: border-box;
     padding-top: 3.5rem;
     height: 100vh;
-    
- 
 }
 .click-to-action{
     width: 100%;
@@ -14,7 +12,6 @@
     flex-direction: column;
    justify-content: start;
 }
-
 .shop-link {
     display: flex;
     flex-direction: column;
@@ -33,13 +30,10 @@
         font-size: $medium;
         line-height: 1.8;
         margin-bottom: 1rem;
-        /*height: 4.675rem;*/
         overflow: auto;
         height: auto;
-        /*max-height: 4.65rem;*/
     }
 }
-
 
 /*media query click to action*/
 @media (min-width: 768px) {
@@ -47,7 +41,7 @@
         padding-top: 5.75rem;
     }
     .shop-link {
-        padding: 1.25rem 10.25rem 4.25rem 5.25rem;
+        padding: 3.5% 29% 10% 5.25rem;
         h1 {
             font-family: $old-standard;
             font-weight: $bold;
@@ -57,23 +51,19 @@
     }
 }
 
-
-
 @media (min-width: 992px) {
     .click-to-action {
         width: 45%;
         height: 100%;
     }
-
     .shop-link {
         height: 70%;
-        padding: 4.125rem 5rem 4.125rem 5rem;
+        padding: 12% 16.76% 12% 16.76%;
         h1 {
             font-family: $old-standard;
             font-weight: $bold;
             line-height: 1.4;
             font-size: 47px;
         }
-        
     }
 }

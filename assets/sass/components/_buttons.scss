@@ -6,17 +6,10 @@
     font-weight: $bold;
     border-radius: 0;
     border: 1px solid $smoky-black;
-    /*&__md {
-        font-size: $large;
-        padding: 0.688rem 2rem;
-    }
-    &__sm {
-        font-size: $small;
-        padding: 0.28rem 1.05rem;
-    }*/
 }
 .button:hover {
     border-color: $quick-silver;
+    color: $smoky-black;
 }
 .button-check:focus + .button, .button:focus {
     color: $light-gray;
@@ -35,13 +28,11 @@
 /*media query buttons*/
 
 @media (min-width: 768px) {
-
     .button__md {
         font-size: $large;
         padding: 0.688rem 2rem;
     }
 }
-
 @media (max-width: 767px) {
     .button__sm {
         font-size: $small;
